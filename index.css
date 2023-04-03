@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --blue: #8ac4fc;
+  --gray: #c0c7cd;
+  --gray-dark: #adadad;
+  --red: #ff6868;
+  --gold: #ffbf22;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* font-family: 'Alkatra'; */
+  /* font-family: 'Rubik'; */
+  /* font-family: 'Delicious Handrawn'; */
+  /* font-family: 'Noto Sans'; */
+  font-family: 'Chakra Petch';
+  font-size: 28px;
+}
+
+.wrapper {
+  width: 21cm;
+  height: 29.6cm;
+  padding: 20px 40px;
+  overflow: hidden;
+  /* outline: 1px solid red; */
+}
+
+.bg-blue {
+  background-color: var(--blue);
+}
+.bg-gray {
+  background-color: var(--gray);
+}
+.bg-red {
+  background-color: var(--red);
+}
+
+.flex {
+  display: flex;
+}
+.justify-center {
+  justify-content: center;
+}
+.items-center {
+  align-items: center;
+}
+.border {
+  border: 1px solid var(--gray-dark);
+}
+.round {
+  border-radius: 20px;
+}
+.text-bold {
+  font-weight: bold;
+}
+
+.row {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.col-1 {
+  grid-column: span 1;
+}
+.col-2 {
+  grid-column: span 2;
+}
+.col-3 {
+  grid-column: span 3;
+}
+.col-4 {
+  grid-column: span 4;
+}
+.col-5 {
+  grid-column: span 5;
+}
+.col-6 {
+  grid-column: span 6;
+}
+.col-7 {
+  grid-column: span 7;
+}
+.col-8 {
+  grid-column: span 8;
+}
+.col-9 {
+  grid-column: span 9;
+}
+.col-10 {
+  grid-column: span 10;
+}
+.col-11 {
+  grid-column: span 11;
+}
+.col-12 {
+  grid-column: span 12;
+}
+.px-16 {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.circle {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+}
+.recommend {
+  position: absolute;
+  top: -14px;
+  right: -20px;
+  width: 35px;
+  height: 35px;
+  transform: rotateZ(45deg);
+}
+.recommend path {
+  fill: var(--gold);
+}
