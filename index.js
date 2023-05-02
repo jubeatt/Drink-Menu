@@ -32,8 +32,8 @@ function Row({ name, sPrice, lPrize, canHot, canCold, recommend }) {
   element.innerHTML = `
     ${recommend ? Crown() : ''}
     <div class="col-6 px-16 flex items-center">${name}</div>
-    <div class="col-2 px-16 flex items-center">$${sPrice}</div>
-    <div class="col-2 px-16 flex items-center">$${lPrize}</div> 
+    <div class="col-2 px-16 flex items-center">${sPrice}</div>
+    <div class="col-2 px-16 flex items-center">${lPrize}</div> 
     <div class="col-1 px-16 flex items-center">${hotCircle}</div> 
     <div class="col-1 px-16 flex items-center">${coldCircle}</div> 
   `

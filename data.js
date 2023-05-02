@@ -4,18 +4,34 @@ export const menu1 = [
     sPrice: 35,
     lPrize: 40,
     canHot: true,
-    canCold: true
+    canCold: true,
+    recommend: true
   },
-  { name: 'Sago Nata Ube Tea', sPrice: 35, lPrize: 40, canHot: true, canCold: true },
-  { name: 'Pudding Milk Tea', sPrice: 40, lPrize: 45, canHot: true, canCold: true },
+  {
+    name: 'Sago Nata Ube Tea',
+    sPrice: 35,
+    lPrize: 40,
+    canHot: true,
+    canCold: true,
+    recommend: true
+  },
+  {
+    name: 'Pudding Milk Tea',
+    sPrice: 40,
+    lPrize: 45,
+    canHot: true,
+    canCold: true,
+    recommend: true
+  },
   {
     name: 'Pudding Ube Milk',
     sPrice: 40,
     lPrize: 45,
     canHot: true,
-    canCold: true
+    canCold: true,
+    recommend: true
   },
-  { name: 'Yakult Milk', sPrice: 35, lPrize: 40, canHot: false, canCold: true },
+  { name: 'Yakult Milk', sPrice: 35, lPrize: 40, canHot: false, canCold: true, recommend: true },
   { name: 'Yakult Green Tea', sPrice: 25, lPrize: 35, canHot: false, canCold: true },
   {
     name: 'Yakult Juice Mango',
@@ -32,12 +48,12 @@ export const menu1 = [
     canCold: true
   },
   { name: 'Kundol', sPrice: 25, lPrize: 30, canHot: true, canCold: true, recommend: true },
-  { name: 'Kundol Lemon', sPrice: 50, lPrize: 55, canHot: true, canCold: true, recommend: true },
+  { name: 'Kundol Lemon', sPrice: 50, lPrize: 55, canHot: true, canCold: true },
   { name: 'Kundol Milk', sPrice: 35, lPrize: 40, canHot: true, canCold: true },
   { name: 'Green Tea', sPrice: 15, lPrize: 20, canHot: true, canCold: true },
   { name: 'Black Tea', sPrice: 15, lPrize: 20, canHot: true, canCold: true },
   { name: 'Ube Milk', sPrice: 30, lPrize: 35, canHot: true, canCold: true, recommend: true },
-  { name: 'Milk Tea', sPrice: 30, lPrize: 35, canHot: true, canCold: true },
+  { name: 'Milk Tea', sPrice: 30, lPrize: 35, canHot: true, canCold: true, recommend: true },
   { name: 'Green Milk Tea', sPrice: 30, lPrize: 35, canHot: true, canCold: true },
   { name: 'Mint Green Tea', sPrice: 30, lPrize: 35, canHot: true, canCold: true },
   { name: 'Green Honey Tea', sPrice: 30, lPrize: 35, canHot: true, canCold: true },
@@ -54,8 +70,22 @@ export const menu1 = [
 ]
 
 export const menu2 = [
-  { name: 'Coffee Jelly Milk Tea', sPrice: 35, lPrize: 40, canHot: true, canCold: true },
-  { name: 'Coffee Jelly Ube Milk', sPrice: 35, lPrize: 40, canHot: true, canCold: true },
+  {
+    name: 'Coffee Jelly Milk Tea',
+    sPrice: 35,
+    lPrize: 40,
+    canHot: true,
+    canCold: true,
+    recommend: true
+  },
+  {
+    name: 'Coffee Jelly Ube Milk',
+    sPrice: 35,
+    lPrize: 40,
+    canHot: true,
+    canCold: true,
+    recommend: true
+  },
   { name: 'Yakult Lemon', sPrice: 50, lPrize: 55, canHot: false, canCold: true },
   { name: 'Green Lemon', sPrice: 45, lPrize: 50, canHot: true, canCold: true },
   { name: 'Black Lemon', sPrice: 45, lPrize: 50, canHot: true, canCold: true },
@@ -78,8 +108,7 @@ export const menu2 = [
     sPrice: 40,
     lPrize: 45,
     canHot: true,
-    canCold: true,
-    recommend: true
+    canCold: true
   },
-  { name: 'Gulaman Ube Milk', sPrice: 40, lPrize: 45, canHot: true, canCold: true, recommend: true }
+  { name: 'Gulaman Ube Milk', sPrice: 40, lPrize: 45, canHot: true, canCold: true }
 ]
