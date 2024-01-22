@@ -1,5 +1,8 @@
 import { chineseMenu1, chineseMenu2, englishMenu1, englishMenu2 } from './data.js'
 
+const CHINESE = 'chinese'
+const ENGLISH = 'english'
+
 function Crown() {
   return `
     <svg class="recommend" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
@@ -10,15 +13,21 @@ function Crown() {
   `
 }
 
-function Header() {
+function Header(languageType) {
+  const name = languageType === CHINESE ? '名稱' : 'Name'
+  const smallSize = languageType === CHINESE ? '小杯' : 'M'
+  const largeSize = languageType === CHINESE ? '大杯' : 'L'
+  const hot = languageType === CHINESE ? '熱' : 'H'
+  const cold = languageType === CHINESE ? '冰' : 'C'
+
   const element = document.createElement('div')
   element.classList.add('row', 'mb-10')
   element.innerHTML = `
-    <div class="col-6 px-16 flex items-center text-bold">名稱</div>
-    <div class="col-2 px-16 flex items-center text-bold">小杯</div>
-    <div class="col-2 px-16 flex items-center text-bold">大杯</div> 
-    <div class="col-1 px-16 flex items-center text-bold">熱</div> 
-    <div class="col-1 px-16 flex items-center text-bold">冰</div> 
+    <div class="col-6 px-16 flex items-center text-bold">${name}</div>
+    <div class="col-2 px-16 flex items-center text-bold">${smallSize}</div>
+    <div class="col-2 px-16 flex items-center text-bold">${largeSize}</div> 
+    <div class="col-1 px-16 flex items-center text-bold">${hot}</div> 
+    <div class="col-1 px-16 flex items-center text-bold">${cold}</div> 
   `
   return element
 }
@@ -40,13 +49,18 @@ function Row({ name, sPrice, lPrize, canHot, canCold, recommend }) {
   return element
 }
 
-function render(data) {
+function render(languageType, data) {
   const body = document.body
+  if (languageType === CHINESE) {
+    body.classList.add('ch-font-size')
+  } else {
+    body.classList.add('en-font-size')
+  }
   const wrapper = document.createElement('div')
   wrapper.classList.add('wrapper')
-  wrapper.appendChild(Header())
+  wrapper.appendChild(Header(languageType))
   data.forEach((item) => wrapper.appendChild(Row(item)))
   body.appendChild(wrapper)
 }
 
-render(englishMenu2)
+render(ENGLISH, englishMenu1)
