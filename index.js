@@ -1,4 +1,4 @@
-import { menu1, menu2 } from './data.js'
+import { chineseMenu1, chineseMenu2, englishMenu1, englishMenu2 } from './data.js'
 
 function Crown() {
   return `
@@ -14,11 +14,11 @@ function Header() {
   const element = document.createElement('div')
   element.classList.add('row', 'mb-10')
   element.innerHTML = `
-    <div class="col-6 px-16 flex items-center text-bold">Name</div>
-    <div class="col-2 px-16 flex items-center text-bold">M</div>
-    <div class="col-2 px-16 flex items-center text-bold">L</div> 
-    <div class="col-1 px-16 flex items-center text-bold">H</div> 
-    <div class="col-1 px-16 flex items-center text-bold">C</div> 
+    <div class="col-6 px-16 flex items-center text-bold">名稱</div>
+    <div class="col-2 px-16 flex items-center text-bold">小杯</div>
+    <div class="col-2 px-16 flex items-center text-bold">大杯</div> 
+    <div class="col-1 px-16 flex items-center text-bold">熱</div> 
+    <div class="col-1 px-16 flex items-center text-bold">冰</div> 
   `
   return element
 }
@@ -49,4 +49,4 @@ function render(data) {
   body.appendChild(wrapper)
 }
 
-render(menu2)
+render(englishMenu2)

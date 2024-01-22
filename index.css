@@ -26,7 +26,8 @@ body {
   /* font-family: 'Delicious Handrawn'; */
   /* font-family: 'Noto Sans'; */
   font-family: 'Chakra Petch';
-  font-size: 28px;
+  /* font-size: 28px; english */
+  font-size: 26px; /* chinese */
 }
 
 .wrapper {
